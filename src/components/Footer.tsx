@@ -6,9 +6,9 @@ const Footer = () => {
 
   const services = [
     "Tráfego Pago (Google Ads/Meta)",
+    "Gestão de Redes Sociais",
     "SEO & Marketing de Conteúdo",
-    "Automação com IA",
-    "Agentes de IA para WhatsApp",
+    "Criação de Conteúdo",
     "Consultoria Estratégica"
   ];
 
@@ -36,7 +36,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold">GT Gestão Digital</h3>
             </div>
             <p className="text-white/80 mb-6 max-w-md">
-              Agência especializada em marketing digital, automação com IA e crescimento acelerado 
+              Agência especializada em tráfego pago, gestão de redes sociais e crescimento acelerado 
               para pequenas e médias empresas brasileiras.
             </p>
             
@@ -55,7 +55,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-white/60" />
                 <a 
-                  href="https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA." 
+                  href="https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais." 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"

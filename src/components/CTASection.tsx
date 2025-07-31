@@ -41,7 +41,7 @@ const CTASection = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Agende uma conversa gratuita com nossos especialistas e descubra como multiplicar 
-            sua receita com marketing digital e automação inteligente.
+            sua receita com tráfego pago e gestão profissional de redes sociais.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ const CTASection = () => {
                     <h3 className="font-bold text-lg mb-1">Prefere conversar agora?</h3>
                     <p className="text-green-100 text-sm">Fale direto com nossos especialistas via WhatsApp</p>
                   </div>
-                  <Button className="bg-white text-green-600 hover:bg-green-50 font-bold" onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA.', '_blank')}>
+                  <Button className="bg-white text-green-600 hover:bg-green-50 font-bold" onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais.', '_blank')}>
                     Chamar
                   </Button>
                 </div>

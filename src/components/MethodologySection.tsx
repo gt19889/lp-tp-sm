@@ -9,7 +9,7 @@ const MethodologySection = () => {
       number: "01",
       title: "Captar",
       description: "Identificamos e atraímos seu público ideal através de campanhas de tráfego pago otimizadas e SEO estratégico.",
-      aiFeature: "IA para segmentação precisa de audiências",
+      aiFeature: "Tráfego pago otimizado para seu público",
       color: "from-red-500 to-orange-500"
     },
     {
@@ -17,7 +17,7 @@ const MethodologySection = () => {
       number: "02", 
       title: "Engajar",
       description: "Criamos relacionamento através de conteúdo relevante e automações inteligentes que nutrem leads continuamente.",
-      aiFeature: "Chatbots de IA para engajamento 24/7",
+      aiFeature: "Conteúdo profissional para redes sociais",
       color: "from-blue-500 to-cyan-500"
     },
     {
@@ -25,7 +25,7 @@ const MethodologySection = () => {
       number: "03",
       title: "Converter",
       description: "Transformamos prospects em clientes com estratégias de conversão baseadas em dados e automação de vendas.",
-      aiFeature: "IA preditiva para otimizar conversões",
+      aiFeature: "Campanhas otimizadas para conversão",
       color: "from-green-500 to-emerald-500"
     },
     {
@@ -33,7 +33,7 @@ const MethodologySection = () => {
       number: "04",
       title: "Fidelizar",
       description: "Mantemos clientes engajados e geramos indicações através de relacionamento personalizado e valor contínuo.",
-      aiFeature: "Automação de relacionamento inteligente",
+      aiFeature: "Estratégias de fidelização digital",
       color: "from-purple-500 to-pink-500"
     }
   ];
@@ -53,7 +53,7 @@ const MethodologySection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Um framework estruturado que combina estratégia, tecnologia e IA para maximizar seus resultados em cada etapa do funil de vendas.
+            Um framework estruturado que combina tráfego pago, gestão de redes sociais e estratégia digital para maximizar seus resultados em cada etapa do funil de vendas.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ const MethodologySection = () => {
             Por que nossa metodologia funciona?
           </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
-            Combinamos anos de experiência em marketing digital com as mais avançadas tecnologias de IA e automação. 
+            Combinamos anos de experiência em tráfego pago e gestão de redes sociais com estratégias comprovadas. 
             Cada etapa é otimizada continuamente com base em dados reais, garantindo resultados consistentes e escaláveis.
           </p>
           
@@ -119,13 +119,13 @@ const MethodologySection = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <p className="text-sm text-muted-foreground">Automação ativa</p>
+              <p className="text-sm text-muted-foreground">Monitoramento ativo</p>
             </div>
           </div>
           
           <button 
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
-            onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA.', '_blank')}
+            onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais.', '_blank')}
           >
             Quero Aplicar Esta Metodologia
             <ArrowRight className="w-5 h-5" />
