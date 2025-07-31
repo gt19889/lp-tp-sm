@@ -45,7 +45,7 @@ const HeroSection = () => {
                 <h4 className="font-semibold text-primary">📈 Tráfego Pago Completo</h4>
                 <p className="text-sm text-muted-foreground">Google Ads OU Meta Ads</p>
                 <p className="text-sm text-muted-foreground">Configuração + Otimização</p>
-                <p className="text-sm text-muted-foreground">Relatórios semanais</p>
+                <p className="text-sm text-muted-foreground">Relatórios mensais detalhados</p>
               </div>
               <div className="space-y-2">
                 <h4 className="font-semibold text-primary">📱 Gestão de Redes Sociais</h4>
@@ -53,6 +53,9 @@ const HeroSection = () => {
                 <p className="text-sm text-muted-foreground">4 reels de alta qualidade</p>
                 <p className="text-sm text-muted-foreground">Stories + Legendas otimizadas</p>
               </div>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-sm font-medium text-primary">+ Relatórios mensais de performance completos</p>
             </div>
           </div>
           
