@@ -13,7 +13,7 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "Início", href: "#hero" },
+    { name: "Início", href: "/" },
     { name: "Serviços", href: "#services" },
     { name: "Metodologia", href: "#methodology" },
     { name: "Resultados", href: "#results" },
@@ -111,21 +111,27 @@ const Footer = () => {
               <h5 className="font-medium mb-3">Siga-nos</h5>
               <div className="flex gap-3">
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/gtgestaodigital" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/gtgestaodigital" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/company/gtgestaodigital" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                   aria-label="LinkedIn"
                 >
