@@ -87,7 +87,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Siga-nos</h4>
               <div className="flex gap-3">
                 <a 
-                  href="https://www.facebook.com/gtgestaodigital" 
+                  href="https://www.facebook.com/profile.php?id=100092534148492&sk=about" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -96,22 +96,13 @@ const Footer = () => {
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a 
-                  href="https://www.instagram.com/gtgestaodigital" 
+                  href="https://www.instagram.com/gt.gestaodigital" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/company/gtgestaodigital" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-4 h-4" />
                 </a>
               </div>
             </div>
