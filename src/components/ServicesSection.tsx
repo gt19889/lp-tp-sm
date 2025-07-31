@@ -1,56 +1,56 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Brain, MessageSquare, Settings, Zap, ArrowRight, Users, CheckCircle } from "lucide-react";
+import { Target, TrendingUp, Users, BarChart3, Instagram, Video, ArrowRight, CheckCircle } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Clock,
-      title: "Atendimento 24/7",
-      subtitle: "Nunca Para de Trabalhar",
-      description: "Seu agente virtual atende clientes 24 horas por dia, 7 dias por semana, 365 dias por ano. Nunca descansa, não tira férias e não fica doente.",
-      features: ["Disponível 24/7/365", "Zero pausas ou intervalos", "Sem feriados ou férias"],
-      badge: "Essencial"
+      icon: Target,
+      title: "Google Ads Profissional",
+      subtitle: "Campanhas de Alto Desempenho",
+      description: "Gestão completa das suas campanhas no Google Ads com foco em conversão e ROI. Configuração, otimização e monitoramento diário.",
+      features: ["Palavras-chave estratégicas", "Otimização de CPC", "Relatórios detalhados", "Gestão de orçamento"],
+      badge: "Google Partner"
     },
     {
-      icon: Brain,
-      title: "Conhecimento Total",
-      subtitle: "Sabe Tudo Sobre Sua Empresa",
-      description: "Treinado com todas as informações da sua empresa: produtos, serviços, preços, políticas e procedimentos.",
-      features: ["Base de conhecimento completa", "Respostas precisas", "Informações sempre atualizadas"],
-      badge: "Inteligente"
+      icon: Users,
+      title: "Meta Ads (Facebook/Instagram)",
+      subtitle: "Alcance Seu Público Ideal",
+      description: "Campanhas no Facebook e Instagram com segmentação avançada e criativos de alta conversão para maximizar seus resultados.",
+      features: ["Segmentação avançada", "Criativos otimizados", "Teste A/B contínuo", "Pixel tracking"],
+      badge: "Meta Business"
     },
     {
-      icon: MessageSquare,
-      title: "Conversas Naturais",
-      subtitle: "Parece um Humano Real",
-      description: "Utiliza IA avançada para manter conversas naturais e envolventes, criando uma experiência indistinguível de um atendente humano.",
-      features: ["Linguagem natural", "Empatia artificial", "Personalização total"],
+      icon: Instagram,
+      title: "Gestão de Redes Sociais",
+      subtitle: "Conteúdo Profissional",
+      description: "Criação e publicação de conteúdo estratégico para suas redes sociais, incluindo posts, stories e reels de alta qualidade.",
+      features: ["12 posts mensais", "4 reels profissionais", "Stories diários", "Hashtags estratégicas"],
+      badge: "Criativo"
+    },
+    {
+      icon: Video,
+      title: "Produção de Reels",
+      subtitle: "Conteúdo Viral",
+      description: "Criação de reels profissionais otimizados para engajamento e alcance, seguindo as tendências mais atuais das redes sociais.",
+      features: ["Roteiros criativos", "Edição profissional", "Tendências atuais", "Call-to-action otimizado"],
       badge: null
     },
     {
-      icon: Zap,
-      title: "Respostas Instantâneas",
-      subtitle: "Zero Tempo de Espera",
-      description: "Responde imediatamente a todas as mensagens, eliminando filas de espera e aumentando a satisfação do cliente.",
-      features: ["Resposta em milissegundos", "Sem tempo de espera", "Atendimento simultâneo ilimitado"],
-      badge: null
-    },
-    {
-      icon: Settings,
-      title: "Personalização Total",
-      subtitle: "Agente Único da Sua Empresa",
-      description: "Configuramos o agente com a personalidade, tom de voz e conhecimento específico da sua empresa para atendimento personalizado.",
-      features: ["Tom de voz personalizado", "Conhecimento específico", "Respostas consistentes"],
+      icon: BarChart3,
+      title: "Relatórios e Analytics",
+      subtitle: "Dados que Importam",
+      description: "Relatórios detalhados com métricas importantes, insights e recomendações para otimizar continuamente suas campanhas.",
+      features: ["Métricas de conversão", "ROI detalhado", "Insights estratégicos", "Recomendações mensais"],
       badge: null
     },
     {
       icon: CheckCircle,
-      title: "Qualificação Inteligente",
-      subtitle: "Identifica Clientes Prontos",
-      description: "Qualifica automaticamente leads, identifica intenção de compra e direciona oportunidades quentes para sua equipe.",
-      features: ["Lead scoring automático", "Identificação de intenção", "Priorização inteligente"],
-      badge: "Vendas"
+      title: "Otimização Contínua",
+      subtitle: "Resultados Crescentes",
+      description: "Monitoramento e otimização constante das campanhas para garantir o melhor desempenho e ROI crescente mês a mês.",
+      features: ["Otimização diária", "Testes A/B", "Ajustes de público", "Melhoria contínua"],
+      badge: "Performance"
     }
   ];
 
@@ -60,13 +60,13 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Por Que Nosso Agente é
+            Nossa Estratégia
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              {" "}Superior
+              {" "}Completa
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Descubra as vantagens exclusivas do agente de IA mais avançado do Brasil para atendimento no WhatsApp.
+            Tráfego pago otimizado + gestão profissional de redes sociais para maximizar suas vendas e presença digital.
           </p>
         </div>
 
@@ -110,13 +110,13 @@ const ServicesSection = () => {
         {/* Bottom CTA */}
         <div className="text-center">
           <p className="text-lg text-muted-foreground mb-6">
-            Pronto para ter o melhor agente de WhatsApp trabalhando para você?
+            Pronto para aumentar suas vendas com tráfego pago + redes sociais?
           </p>
           <button 
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
-            onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20agente%20de%20IA.', '_blank')}
+            onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20oferta%20de%20tr%C3%A1fego%20pago%20%2B%20redes%20sociais.', '_blank')}
           >
-            Testar Agente Grátis
+            Garantir Oferta Especial
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
