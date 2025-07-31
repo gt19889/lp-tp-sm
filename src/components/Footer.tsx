@@ -12,14 +12,6 @@ const Footer = () => {
     "Consultoria Estratégica"
   ];
 
-  const quickLinks = [
-    { name: "Início", href: "/" },
-    { name: "Serviços", href: "#services" },
-    { name: "Metodologia", href: "#methodology" },
-    { name: "Resultados", href: "#results" },
-    { name: "Depoimentos", href: "#testimonials" },
-    { name: "Contato", href: "#contact" }
-  ];
 
   return (
     <footer className="bg-background text-foreground">
@@ -90,25 +82,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Social Media */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href} 
-                    className="text-white/80 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            
-            {/* Social Media */}
-            <div className="mt-6">
-              <h5 className="font-medium mb-3">Siga-nos</h5>
+            <h4 className="text-lg font-semibold mb-4">Siga-nos</h4>
               <div className="flex gap-3">
                 <a 
                   href="https://www.facebook.com/gtgestaodigital" 
@@ -139,7 +115,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-          </div>
         </div>
 
         <Separator className="my-8 bg-white/20" />
