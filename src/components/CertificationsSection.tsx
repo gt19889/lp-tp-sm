@@ -9,7 +9,7 @@ import activeCampaignLogo from "@/assets/logos/activecampaign.png";
 import metaLogo from "@/assets/logos/meta.png";
 import clickUpLogo from "@/assets/logos/clickup.png";
 import kommoLogo from "@/assets/logos/kommo.png";
-import googleAnalyticsLogo from "@/assets/logos/google-analytics.png";
+const googleAnalyticsLogo = "/lovable-uploads/5ac49712-0494-405f-9cf1-a169e1f32acd.png";
 const hotmartLogo = "/lovable-uploads/86b66055-54af-4a06-8071-77a246e13ad1.png";
 import zapierLogo from "@/assets/logos/zapier.png";
 import whatsappLogo from "@/assets/logos/whatsapp.png";
