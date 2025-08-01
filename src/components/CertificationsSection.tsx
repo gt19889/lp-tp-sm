@@ -8,7 +8,7 @@ const rdStationLogo = "/lovable-uploads/b711e4c8-a267-4251-b329-b365c2e79e8e.png
 import activeCampaignLogo from "@/assets/logos/activecampaign.png";
 import metaLogo from "@/assets/logos/meta.png";
 import clickUpLogo from "@/assets/logos/clickup.png";
-import kommoLogo from "@/assets/logos/kommo.png";
+const kommoLogo = "/lovable-uploads/956d2b20-6d50-4967-bc22-813e98caf45f.png";
 const googleAnalyticsLogo = "/lovable-uploads/5ac49712-0494-405f-9cf1-a169e1f32acd.png";
 const hotmartLogo = "/lovable-uploads/86b66055-54af-4a06-8071-77a246e13ad1.png";
 import zapierLogo from "@/assets/logos/zapier.png";
