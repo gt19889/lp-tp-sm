@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Award, Shield, Zap } from "lucide-react";
 
 // Import logos
-import googlePartnerLogo from "@/assets/logos/google-partner.png";
+const googlePartnerLogo = "/lovable-uploads/a53a8ce6-51bb-45ba-b0d3-64ebe4cfe823.png";
 const rdStationLogo = "/lovable-uploads/b711e4c8-a267-4251-b329-b365c2e79e8e.png";
 import activeCampaignLogo from "@/assets/logos/activecampaign.png";
 const metaLogo = "/lovable-uploads/d19286e9-2de3-477c-9ab3-f08946cc8ce6.png";
