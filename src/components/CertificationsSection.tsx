@@ -2,30 +2,42 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Award, Shield, Zap } from "lucide-react";
 
+// Import logos
+import googlePartnerLogo from "@/assets/logos/google-partner.png";
+import rdStationLogo from "@/assets/logos/rd-station.png";
+import activeCampaignLogo from "@/assets/logos/activecampaign.png";
+import metaLogo from "@/assets/logos/meta.png";
+import clickUpLogo from "@/assets/logos/clickup.png";
+import kommoLogo from "@/assets/logos/kommo.png";
+import googleAnalyticsLogo from "@/assets/logos/google-analytics.png";
+import hotmartLogo from "@/assets/logos/hotmart.png";
+import zapierLogo from "@/assets/logos/zapier.png";
+import whatsappLogo from "@/assets/logos/whatsapp.png";
+
 const CertificationsSection = () => {
   const certifications = [
     {
       name: "Google Partner",
       description: "Certificação oficial Google Ads",
-      icon: "🏆",
+      logo: googlePartnerLogo,
       verified: true
     },
     {
       name: "RD Station",
       description: "Parceiro oficial de automação",
-      icon: "🚀",
+      logo: rdStationLogo,
       verified: true
     },
     {
       name: "Active Campaign",
       description: "Especialista em email marketing",
-      icon: "📧",
+      logo: activeCampaignLogo,
       verified: true
     },
     {
       name: "Meta Business",
       description: "Certificado Facebook & Instagram",
-      icon: "📱",
+      logo: metaLogo,
       verified: true
     }
   ];
@@ -34,32 +46,32 @@ const CertificationsSection = () => {
     {
       name: "ClickUp",
       category: "Gestão de Projetos",
-      logo: "🎯"
+      logo: clickUpLogo
     },
     {
       name: "Kommo CRM",
       category: "Gestão de Vendas",
-      logo: "💼"
+      logo: kommoLogo
     },
     {
       name: "Google Analytics",
       category: "Análise de Dados",
-      logo: "📊"
+      logo: googleAnalyticsLogo
     },
     {
       name: "Hotmart",
       category: "Produtos Digitais",
-      logo: "🔥"
+      logo: hotmartLogo
     },
     {
       name: "Zapier",
       category: "Automação",
-      logo: "⚡"
+      logo: zapierLogo
     },
     {
       name: "WhatsApp Business",
       category: "Comunicação",
-      logo: "💬"
+      logo: whatsappLogo
     }
   ];
 
@@ -101,7 +113,9 @@ const CertificationsSection = () => {
               )}
               
               <CardContent className="p-6">
-                <div className="text-4xl mb-4">{cert.icon}</div>
+                <div className="mb-4 flex justify-center">
+                  <img src={cert.logo} alt={cert.name} className="w-16 h-16 object-contain" />
+                </div>
                 <h3 className="font-bold text-lg text-foreground mb-2">{cert.name}</h3>
                 <p className="text-sm text-muted-foreground">{cert.description}</p>
               </CardContent>
@@ -123,7 +137,9 @@ const CertificationsSection = () => {
             {tools.map((tool, index) => (
               <Card key={index} className="text-center group hover:shadow-md transition-all duration-300 border border-border/50 hover:border-primary/20">
                 <CardContent className="p-4">
-                  <div className="text-2xl mb-2">{tool.logo}</div>
+                  <div className="mb-2 flex justify-center">
+                    <img src={tool.logo} alt={tool.name} className="w-8 h-8 object-contain" />
+                  </div>
                   <h4 className="font-semibold text-sm text-foreground mb-1">{tool.name}</h4>
                   <p className="text-xs text-muted-foreground">{tool.category}</p>
                 </CardContent>
