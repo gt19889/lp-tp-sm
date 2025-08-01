@@ -13,77 +13,55 @@ const googleAnalyticsLogo = "/lovable-uploads/5ac49712-0494-405f-9cf1-a169e1f32a
 const hotmartLogo = "/lovable-uploads/86b66055-54af-4a06-8071-77a246e13ad1.png";
 import zapierLogo from "@/assets/logos/zapier.png";
 import whatsappLogo from "@/assets/logos/whatsapp.png";
-
 const CertificationsSection = () => {
-  const certifications = [
-    {
-      name: "Google Partner",
-      description: "Certificação oficial Google Ads",
-      logo: googlePartnerLogo,
-      verified: true
-    },
-    {
-      name: "RD Station",
-      description: "Parceiro oficial de automação",
-      logo: rdStationLogo,
-      verified: true
-    },
-    {
-      name: "Active Campaign",
-      description: "Especialista em email marketing",
-      logo: activeCampaignLogo,
-      verified: true
-    },
-    {
-      name: "Meta Business",
-      description: "Certificado Facebook & Instagram",
-      logo: metaLogo,
-      verified: true
-    }
-  ];
-
-  const tools = [
-    {
-      name: "ClickUp",
-      category: "Gestão de Projetos",
-      logo: clickUpLogo
-    },
-    {
-      name: "Kommo CRM",
-      category: "Gestão de Vendas",
-      logo: kommoLogo
-    },
-    {
-      name: "Google Analytics",
-      category: "Análise de Dados",
-      logo: googleAnalyticsLogo
-    },
-    {
-      name: "Hotmart",
-      category: "Produtos Digitais",
-      logo: hotmartLogo
-    },
-    {
-      name: "Zapier",
-      category: "Automação",
-      logo: zapierLogo
-    },
-    {
-      name: "WhatsApp Business",
-      category: "Comunicação",
-      logo: whatsappLogo
-    }
-  ];
-
-  const securityFeatures = [
-    "Dados protegidos com criptografia SSL",
-    "Conformidade com LGPD",
-    "Backups automáticos diários",
-    "Monitoramento 24/7"
-  ];
-
-  return (
-    <section className="py-20 bg-background">
+  const certifications = [{
+    name: "Google Partner",
+    description: "Certificação oficial Google Ads",
+    logo: googlePartnerLogo,
+    verified: true
+  }, {
+    name: "RD Station",
+    description: "Parceiro oficial de automação",
+    logo: rdStationLogo,
+    verified: true
+  }, {
+    name: "Active Campaign",
+    description: "Especialista em email marketing",
+    logo: activeCampaignLogo,
+    verified: true
+  }, {
+    name: "Meta Business",
+    description: "Certificado Facebook & Instagram",
+    logo: metaLogo,
+    verified: true
+  }];
+  const tools = [{
+    name: "ClickUp",
+    category: "Gestão de Projetos",
+    logo: clickUpLogo
+  }, {
+    name: "Kommo CRM",
+    category: "Gestão de Vendas",
+    logo: kommoLogo
+  }, {
+    name: "Google Analytics",
+    category: "Análise de Dados",
+    logo: googleAnalyticsLogo
+  }, {
+    name: "Hotmart",
+    category: "Produtos Digitais",
+    logo: hotmartLogo
+  }, {
+    name: "Zapier",
+    category: "Automação",
+    logo: zapierLogo
+  }, {
+    name: "WhatsApp Business",
+    category: "Comunicação",
+    logo: whatsappLogo
+  }];
+  const securityFeatures = ["Dados protegidos com criptografia SSL", "Conformidade com LGPD", "Backups automáticos diários", "Monitoramento 24/7"];
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -104,13 +82,10 @@ const CertificationsSection = () => {
 
         {/* Certifications Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {certifications.map((cert, index) => (
-            <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/20 relative">
-              {cert.verified && (
-                <div className="absolute -top-2 -right-2 bg-green-500 text-white rounded-full p-1">
+          {certifications.map((cert, index) => <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/20 relative">
+              {cert.verified && <div className="absolute -top-2 -right-2 bg-green-500 text-white rounded-full p-1">
                   <CheckCircle className="w-4 h-4" />
-                </div>
-              )}
+                </div>}
               
               <CardContent className="p-6">
                 <div className="mb-4 flex justify-center">
@@ -119,8 +94,7 @@ const CertificationsSection = () => {
                 <h3 className="font-bold text-lg text-foreground mb-2">{cert.name}</h3>
                 <p className="text-sm text-muted-foreground">{cert.description}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Tools & Integrations */}
@@ -134,8 +108,7 @@ const CertificationsSection = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {tools.map((tool, index) => (
-              <Card key={index} className="text-center group hover:shadow-md transition-all duration-300 border border-border/50 hover:border-primary/20">
+            {tools.map((tool, index) => <Card key={index} className="text-center group hover:shadow-md transition-all duration-300 border border-border/50 hover:border-primary/20">
                 <CardContent className="p-4">
                   <div className="mb-2 flex justify-center">
                     <img src={tool.logo} alt={tool.name} className="w-8 h-8 object-contain" />
@@ -143,8 +116,7 @@ const CertificationsSection = () => {
                   <h4 className="font-semibold text-sm text-foreground mb-1">{tool.name}</h4>
                   <p className="text-xs text-muted-foreground">{tool.category}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -164,19 +136,18 @@ const CertificationsSection = () => {
               </p>
               
               <ul className="space-y-3">
-                {securityFeatures.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                {securityFeatures.map((feature, index) => <li key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-card rounded-lg p-6 text-center border border-border/50">
                 <Award className="w-8 h-8 text-primary mx-auto mb-3" />
-                <div className="text-2xl font-bold text-foreground mb-1">5+</div>
+                <div className="text-2xl font-bold text-foreground mb-1">3
++</div>
                 <p className="text-sm text-muted-foreground">Anos de Experiência</p>
               </div>
               <div className="bg-card rounded-lg p-6 text-center border border-border/50">
@@ -188,8 +159,6 @@ const CertificationsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CertificationsSection;
