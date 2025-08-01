@@ -49,7 +49,7 @@ const HeroSection = () => {
                 <h4 className="font-semibold text-primary">📈 Tráfego Pago Completo</h4>
                 <p className="text-sm text-muted-foreground">Google Ads OU Meta Ads</p>
                 <p className="text-sm text-muted-foreground">Configuração + Otimização</p>
-                <p className="text-sm text-muted-foreground">Suporte técnico especializado</p>
+                <p className="text-sm text-muted-foreground">Reuniões mensais com equipe</p>
               </div>
               <div className="space-y-2">
                 <h4 className="font-semibold text-primary">📱 Gestão de Redes Sociais</h4>
