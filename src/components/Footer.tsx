@@ -47,7 +47,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-white/60" />
                 <a 
-                  href="https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais." 
+                  href="https://wa.me/5531984005700?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais." 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"

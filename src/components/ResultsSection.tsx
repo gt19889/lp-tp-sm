@@ -167,7 +167,7 @@ const ResultsSection = () => {
           
           <button 
             className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center gap-2 shadow-lg"
-            onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais.', '_blank')}
+            onClick={() => window.open('https://wa.me/5531984005700?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais.', '_blank')}
           >
             Agendar Consultoria Gratuita
             <ArrowRight className="w-5 h-5" />

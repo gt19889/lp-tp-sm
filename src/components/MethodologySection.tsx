@@ -125,7 +125,7 @@ const MethodologySection = () => {
           
           <button 
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
-            onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais.', '_blank')}
+            onClick={() => window.open('https://wa.me/5531984005700?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20tr%C3%A1fego%20pago%20e%20gest%C3%A3o%20de%20redes%20sociais.', '_blank')}
           >
             Quero Aplicar Esta Metodologia
             <ArrowRight className="w-5 h-5" />

@@ -81,7 +81,7 @@ const HeroSection = () => {
           
           {/* CTA Button */}
           <div className="flex justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('https://wa.me/553171547107?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20oferta%20de%20tr%C3%A1fego%20pago%20%2B%20redes%20sociais.', '_blank')}>
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('https://wa.me/5531984005700?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20oferta%20de%20tr%C3%A1fego%20pago%20%2B%20redes%20sociais.', '_blank')}>
               Garantir Oferta Especial
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
