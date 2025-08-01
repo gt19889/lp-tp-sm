@@ -40,6 +40,10 @@ const HeroSection = () => {
           {/* Offer Box */}
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-8 mb-10 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">🎯 Oferta Exclusiva desta Semana</h3>
+            <div className="text-center mb-4">
+              <p className="text-lg text-muted-foreground line-through">De: R$2.197,00</p>
+              <p className="text-3xl font-bold text-primary">Por R$1.697,00</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               <div className="space-y-2">
                 <h4 className="font-semibold text-primary">📈 Tráfego Pago Completo</h4>
