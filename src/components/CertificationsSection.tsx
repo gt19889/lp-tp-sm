@@ -6,7 +6,7 @@ import { CheckCircle, Award, Shield, Zap } from "lucide-react";
 const googlePartnerLogo = "/lovable-uploads/a53a8ce6-51bb-45ba-b0d3-64ebe4cfe823.png";
 const rdStationLogo = "/lovable-uploads/b711e4c8-a267-4251-b329-b365c2e79e8e.png";
 import activeCampaignLogo from "@/assets/logos/activecampaign.png";
-const metaLogo = "/lovable-uploads/d19286e9-2de3-477c-9ab3-f08946cc8ce6.png";
+const metaLogo = "/lovable-uploads/6227c1b4-3a18-4d73-b1b1-d6a2b14cb6c6.png";
 import clickUpLogo from "@/assets/logos/clickup.png";
 const kommoLogo = "/lovable-uploads/956d2b20-6d50-4967-bc22-813e98caf45f.png";
 const googleAnalyticsLogo = "/lovable-uploads/5ac49712-0494-405f-9cf1-a169e1f32acd.png";
