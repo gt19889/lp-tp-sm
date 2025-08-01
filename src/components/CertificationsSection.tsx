@@ -4,7 +4,7 @@ import { CheckCircle, Award, Shield, Zap } from "lucide-react";
 
 // Import logos
 import googlePartnerLogo from "@/assets/logos/google-partner.png";
-import rdStationLogo from "@/assets/logos/rd-station.png";
+const rdStationLogo = "/lovable-uploads/b711e4c8-a267-4251-b329-b365c2e79e8e.png";
 import activeCampaignLogo from "@/assets/logos/activecampaign.png";
 import metaLogo from "@/assets/logos/meta.png";
 import clickUpLogo from "@/assets/logos/clickup.png";
