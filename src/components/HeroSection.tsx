@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, TrendingUp, Users, Calendar, Instagram, Youtube } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
@@ -34,7 +32,7 @@ const HeroSection = () => {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             <strong>Gestão completa do seu Google Ads ou Meta Ads</strong> + conteúdo profissional para suas redes sociais. 
-            <strong>Aumente suas vendas em até 300%</strong> com nossa estratégia comprovada.
+            <strong> Aumente suas vendas em até 300%</strong> com nossa estratégia comprovada.
           </p>
           
           {/* Offer Box */}
@@ -98,8 +96,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
