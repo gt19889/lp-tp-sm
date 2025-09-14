@@ -69,7 +69,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center justify-center gap-2 text-sm">
               <TrendingUp className="w-5 h-5 text-primary" />
-              <span>ROI Garantido</span>
+              <span>Investimento Inteligente</span>
             </div>
             <div className="flex items-center justify-center gap-2 text-sm">
               <Users className="w-5 h-5 text-primary" />
