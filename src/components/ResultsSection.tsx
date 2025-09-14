@@ -72,7 +72,7 @@ const ResultsSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mais de 200 empresas já transformaram seus resultados com nossas estratégias. 
+            Mais de 80 empresas já transformaram seus resultados com nossas estratégias. 
             Veja alguns casos de sucesso que demonstram o poder das nossas soluções.
           </p>
         </div>

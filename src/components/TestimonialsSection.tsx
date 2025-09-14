@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
             <p className="text-muted-foreground">Avaliação Google</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">200+</div>
+            <div className="text-4xl font-bold text-primary mb-2">80+</div>
             <p className="text-muted-foreground">Clientes Atendidos</p>
           </div>
           <div className="text-center">

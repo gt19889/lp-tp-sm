@@ -87,7 +87,7 @@ const HeroSection = () => {
           
           {/* Trust indicators */}
           <div className="mt-12 text-sm text-muted-foreground">
-            <p className="mb-4">✅ Mais de 200 empresas aumentaram suas vendas conosco</p>
+            <p className="mb-4">✅ Mais de 80 empresas aumentaram suas vendas conosco</p>
             <div className="flex flex-wrap justify-center gap-6 opacity-60">
               <span className="bg-secondary px-3 py-1 rounded-md">Google Partner</span>
               <span className="bg-secondary px-3 py-1 rounded-md">Meta Business</span>
