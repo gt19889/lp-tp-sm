@@ -22,11 +22,11 @@ const HeroSection = () => {
           
           {/* Main title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Multiplique Suas Vendas com
+            Domine seu mercado com
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              {" "}Tráfego Pago{" "}
+              {" "}Tráfego Pago + Redes Sociais{" "}
             </span>
-            e Redes Sociais
+            e veja suas vendas decolarem
           </h1>
           
           {/* Subtitle */}
