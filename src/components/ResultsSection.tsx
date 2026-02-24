@@ -42,8 +42,8 @@ const ResultsSection = () => {
     },
     {
       icon: Building2,
-      value: "+120",
-      label: "clínicas atendidas nos últimos 2 anos",
+      value: "R$900mil+",
+      label: "investidos em Google Ads em 2025",
     },
   ];
 
