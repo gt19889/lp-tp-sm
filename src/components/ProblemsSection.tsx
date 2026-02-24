@@ -20,8 +20,8 @@ const ProblemsSection = () => {
     },
     {
       icon: CalendarX,
-      title: "Agenda vazia nos horários ruins",
-      description: "Falta previsibilidade. Alguns dias lotados, outros com horários em aberto.",
+      title: "Agenda imprevisível",
+      description: "Alguns dias lotados, outros vazios. Sem controle sobre o fluxo de pacientes, fica impossível planejar o crescimento da clínica.",
     },
     {
       icon: BarChart3,
