@@ -1,9 +1,26 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Star } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import WhatsAppLeadModal from "@/components/WhatsAppLeadModal";
 
 const HeroSection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState("");
+
+  const openModal = (plan: string) => {
+    setSelectedPlan(plan);
+    setModalOpen(true);
+  };
+
+  const planFeatures = [
+    "Site profissional criado pela GT",
+    "Gestão de Google Ads dedicada",
+    "Relatórios mensais de resultado",
+    "Suporte prioritário via WhatsApp",
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
       {/* Background decoration */}
@@ -22,12 +39,7 @@ const HeroSection = () => {
           <Button
             size="sm"
             className="bg-primary hover:bg-primary-hover text-primary-foreground"
-            onClick={() =>
-              window.open(
-                "https://wa.me/5531984005700?text=Ol%C3%A1!%20Quero%20aparecer%20no%20Google%20com%20a%20GT.",
-                "_blank"
-              )
-            }
+            onClick={() => openModal("Plano Crescimento Clínica")}
           >
             Quero aparecer no Google
             <ArrowRight className="ml-1 w-4 h-4" />
@@ -36,7 +48,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-24">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-5xl mx-auto">
           {/* Tag line */}
           <Badge className="bg-primary/10 text-primary border-primary/20 mb-6 text-sm">
             Para clínicas médicas e estéticas
@@ -61,61 +73,94 @@ const HeroSection = () => {
             Resultado: mais visibilidade, mais agendamentos, menos desperdício.
           </p>
 
-          {/* Offer Card */}
-          <Card className="max-w-xl mx-auto mb-10 border-2 border-primary/30 shadow-xl">
-            <CardHeader className="text-center pb-4">
-              <Badge className="bg-yellow-100 text-yellow-700 border-yellow-200 mx-auto mb-3">
-                ⭐ PLANO MAIS ESCOLHIDO
-              </Badge>
-              <CardTitle className="text-2xl md:text-3xl">Plano Crescimento Clínica</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <ul className="space-y-3 text-left">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span>Site profissional criado pela GT</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span>Gestão de Google Ads dedicada</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span>Relatórios mensais de resultado</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                  <span>Suporte prioritário via WhatsApp</span>
-                </li>
-              </ul>
+          {/* Plans */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
+            {/* Plan 1 — 6 months */}
+            <Card className="border-2 border-primary/30 shadow-xl relative">
+              <CardHeader className="text-center pb-4">
+                <Badge className="bg-yellow-100 text-yellow-700 border-yellow-200 mx-auto mb-3">
+                  ⭐ MAIS ESCOLHIDO
+                </Badge>
+                <CardTitle className="text-xl md:text-2xl">Plano Crescimento Clínica</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3 text-left">
+                  {planFeatures.map((f, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-sm">{f}</span>
+                    </li>
+                  ))}
+                </ul>
 
-              <div className="text-center pt-4 border-t border-border">
-                <p className="text-4xl font-bold text-primary">R$ 997<span className="text-lg font-normal text-muted-foreground">/mês</span></p>
-                <p className="text-sm text-muted-foreground mt-1">Contrato de 6 meses</p>
-                <p className="text-xs text-muted-foreground italic mt-1">
-                  (Investimento em anúncios não incluso — gerenciado por você com nossa orientação)
+                <div className="text-center pt-4 border-t border-border">
+                  <p className="text-4xl font-bold text-primary">
+                    R$ 997<span className="text-lg font-normal text-muted-foreground">/mês</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">Contrato de 6 meses</p>
+                  <p className="text-xs text-muted-foreground italic mt-1">
+                    (Investimento em anúncios não incluso)
+                  </p>
+                </div>
+
+                <Button
+                  size="lg"
+                  className="w-full bg-primary hover:bg-primary-hover text-primary-foreground py-4 text-lg shadow-lg"
+                  onClick={() => openModal("Plano Crescimento Clínica — 6 meses")}
+                >
+                  👉 Quero começar agora
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+
+                <p className="text-xs text-muted-foreground text-center">
+                  Sem taxa de setup · Vagas limitadas por região
                 </p>
-              </div>
+              </CardContent>
+            </Card>
 
-              <Button
-                size="lg"
-                className="w-full bg-primary hover:bg-primary-hover text-primary-foreground py-4 text-lg shadow-lg"
-                onClick={() =>
-                  window.open(
-                    "https://wa.me/5531984005700?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20o%20Plano%20Crescimento%20Cl%C3%ADnica.",
-                    "_blank"
-                  )
-                }
-              >
-                👉 Quero começar agora
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+            {/* Plan 2 — 3 months */}
+            <Card className="border-2 border-accent/30 shadow-xl relative">
+              <CardHeader className="text-center pb-4">
+                <Badge className="bg-accent/10 text-accent border-accent/20 mx-auto mb-3">
+                  ⚡ MAIS FLEXÍVEL
+                </Badge>
+                <CardTitle className="text-xl md:text-2xl">Plano Crescimento Express</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3 text-left">
+                  {planFeatures.map((f, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-sm">{f}</span>
+                    </li>
+                  ))}
+                </ul>
 
-              <p className="text-xs text-muted-foreground text-center">
-                Sem taxa de setup · Sem contratos ocultos · Vagas limitadas por região
-              </p>
-            </CardContent>
-          </Card>
+                <div className="text-center pt-4 border-t border-border">
+                  <p className="text-4xl font-bold text-accent">
+                    R$ 1.297<span className="text-lg font-normal text-muted-foreground">/mês</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">Contrato de 3 meses</p>
+                  <p className="text-xs text-muted-foreground italic mt-1">
+                    (Investimento em anúncios não incluso)
+                  </p>
+                </div>
+
+                <Button
+                  size="lg"
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-4 text-lg shadow-lg"
+                  onClick={() => openModal("Plano Crescimento Express — 3 meses")}
+                >
+                  👉 Quero começar agora
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+
+                <p className="text-xs text-muted-foreground text-center">
+                  Sem taxa de setup · Vagas limitadas por região
+                </p>
+              </CardContent>
+            </Card>
+          </div>
 
           {/* Proof numbers */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
@@ -134,6 +179,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      <WhatsAppLeadModal open={modalOpen} onOpenChange={setModalOpen} planName={selectedPlan} />
     </section>
   );
 };
