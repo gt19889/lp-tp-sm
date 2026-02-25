@@ -1,17 +1,14 @@
 import { MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
+import WhatsAppLeadModal from "@/components/WhatsAppLeadModal";
 
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    // Show button after a small delay
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 1000);
-
-    // Animate every 10 seconds to draw attention
+    const timer = setTimeout(() => setIsVisible(true), 1000);
     const animationInterval = setInterval(() => {
       setIsAnimating(true);
       setTimeout(() => setIsAnimating(false), 1000);
@@ -23,17 +20,13 @@ const WhatsAppButton = () => {
     };
   }, []);
 
-  const handleClick = () => {
-    window.open('https://wa.me/5531984005700?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.', '_blank');
-  };
-
   if (!isVisible) return null;
 
   return (
     <>
       {/* Desktop/Tablet Button */}
       <button
-        onClick={handleClick}
+        onClick={() => setModalOpen(true)}
         className={`
           fixed bottom-6 right-6 z-50 
           bg-green-500 hover:bg-green-600 
@@ -47,14 +40,12 @@ const WhatsAppButton = () => {
         aria-label="Conversar no WhatsApp"
       >
         <MessageCircle className="w-6 h-6" />
-        <span className="font-medium whitespace-nowrap">
-          Falar com Especialista
-        </span>
+        <span className="font-medium whitespace-nowrap">Falar com Especialista</span>
       </button>
 
       {/* Mobile Button */}
       <button
-        onClick={handleClick}
+        onClick={() => setModalOpen(true)}
         className={`
           fixed bottom-6 right-6 z-50 
           bg-green-500 hover:bg-green-600 
@@ -85,15 +76,13 @@ const WhatsAppButton = () => {
           </div>
           <div className="flex-1">
             <p className="text-sm font-medium text-foreground">GT Gestão Digital</p>
-            <p className="text-xs text-muted-foreground">
-              Olá! Como podemos ajudar você hoje?
-            </p>
+            <p className="text-xs text-muted-foreground">Olá! Como podemos ajudar você hoje?</p>
           </div>
         </div>
-        
-        {/* Speech bubble arrow */}
         <div className="absolute bottom-0 right-8 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white transform translate-y-full"></div>
       </div>
+
+      <WhatsAppLeadModal open={modalOpen} onOpenChange={setModalOpen} />
     </>
   );
 };

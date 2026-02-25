@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import WhatsAppLeadModal from "@/components/WhatsAppLeadModal";
 
 const CTASection = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
@@ -19,12 +23,7 @@ const CTASection = () => {
           <Button
             size="lg"
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-10 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={() =>
-              window.open(
-                "https://wa.me/5531984005700?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Plano%20Crescimento%20Cl%C3%ADnica.",
-                "_blank"
-              )
-            }
+            onClick={() => setModalOpen(true)}
           >
             👉 Falar com a GT no WhatsApp
             <ArrowRight className="ml-2 w-5 h-5" />
@@ -35,6 +34,8 @@ const CTASection = () => {
           </p>
         </div>
       </div>
+
+      <WhatsAppLeadModal open={modalOpen} onOpenChange={setModalOpen} />
     </section>
   );
 };
