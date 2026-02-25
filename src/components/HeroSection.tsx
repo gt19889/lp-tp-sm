@@ -124,8 +124,8 @@ const HeroSection = () => {
               <p className="text-sm text-muted-foreground">sites entregues</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary">R$900 mil+</div>
-              <p className="text-sm text-muted-foreground">gerenciados em Google Ads em 2025</p>
+              <div className="text-3xl font-bold text-primary">R$900mil+</div>
+              <p className="text-sm text-muted-foreground">investidos em Google Ads em 2025</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary">325x</div>
